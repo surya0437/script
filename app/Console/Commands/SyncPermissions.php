@@ -5,12 +5,6 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 
-use App\Models\Day;
-use Illuminate\Support\Carbon;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
-
-
 class SyncPermissions extends Command
 {
     protected $signature = 'sync:permissions';
