@@ -19,6 +19,7 @@ class SyncPermissions extends Command
         $permissions = DB::table('permissions')
             ->where('name', 'not like', '%own-%')
             ->select('id', 'name')
+            ->orderBy('id', 'asc')
             ->get();
 
         if ($permissions->isEmpty()) {
